@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BariBusRT - Supporto</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #007AFF;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #007AFF;
+            padding-bottom: 10px;
+        }
+        .disclaimer {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .disclaimer h3 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .feature {
+            background: #f8f9fa;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 4px solid #007AFF;
+        }
+        .contact {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚌 BariBusRT</h1>
+        <p style="text-align: center; font-size: 18px; color: #666;">Tracciamento autobus in tempo reale per Bari</p>
+
+        <div class="disclaimer">
+            <h3>⚠️ Importante - Disclaimer</h3>
+            <p><strong>Il funzionamento di questa applicazione dipende interamente dalla disponibilità del servizio API web di AMTAB.</strong></p>
+            <p>L'app utilizza i dati in tempo reale forniti da AMTAB per mostrare le posizioni degli autobus e gli orari di arrivo. In caso di:</p>
+            <ul>
+                <li>Interruzione del servizio API AMTAB</li>
+                <li>Manutenzione dei server AMTAB</li>
+                <li>Problemi tecnici del sistema AMTAB</li>
+            </ul>
+            <p>L'applicazione potrebbe non funzionare correttamente o mostrare dati non aggiornati. L'indicatore WiFi nell'app segnala lo stato di salute del servizio.</p>
+        </div>
+
+        <h2>📱 Funzionalità</h2>
+        
+        <div class="feature">
+            <h4>🗺️ Mappa in Tempo Reale</h4>
+            <p>Visualizza la posizione degli autobus in tempo reale sulla mappa di Bari con fermate e percorsi.</p>
+        </div>
+
+        <div class="feature">
+            <h4>📍 Rilevamento Fermata</h4>
+            <p>Trova automaticamente le fermate più vicine alla tua posizione GPS.</p>
+        </div>
+
+        <div class="feature">
+            <h4>⏰ Orari di Arrivo</h4>
+            <p>Mostra gli orari di arrivo previsti per ogni linea con ritardi in tempo reale.</p>
+        </div>
+
+        <div class="feature">
+            <h4>🎯 Trasparenza Direzionale</h4>
+            <p>Gli autobus che vanno nella direzione opposta alla fermata selezionata sono mostrati con trasparenza ridotta.</p>
+        </div>
+
+        <div class="feature">
+            <h4>📶 Monitoraggio Servizio</h4>
+            <p>Indicatore WiFi che mostra lo stato di salute del servizio dati AMTAB.</p>
+        </div>
+
+        <h2>🚀 Come Usare l'App</h2>
+        <ol>
+            <li><strong>Avvio:</strong> L'app rileva automaticamente la tua posizione e trova le fermate vicine</li>
+            <li><strong>Selezione Fermata:</strong> Tocca una fermata sulla mappa per selezionarla</li>
+            <li><strong>Informazioni:</strong> Il badge in basso mostra gli arrivi previsti per la fermata selezionata</li>
+            <li><strong>Dettagli Bus:</strong> Tocca un autobus per vedere informazioni dettagliate</li>
+            <li><strong>Refresh:</strong> Usa il pulsante di refresh o pull-to-refresh per aggiornare i dati</li>
+        </ol>
+
+        <h2>🔧 Risoluzione Problemi</h2>
+        
+        <h4>L'app non mostra autobus:</h4>
+        <ul>
+            <li>Verifica la connessione internet</li>
+            <li>Controlla l'indicatore WiFi nell'app (rosso = servizio non disponibile)</li>
+            <li>Prova a fare refresh manuale</li>
+            <li>Il servizio AMTAB potrebbe essere temporaneamente non disponibile</li>
+        </ul>
+
+        <h4>Posizione non rilevata:</h4>
+        <ul>
+            <li>Assicurati di aver dato il permesso di localizzazione all'app</li>
+            <li>Verifica che il GPS sia attivo</li>
+            <li>Prova a uscire e rientrare nell'app</li>
+        </ul>
+
+        <h4>Dati non aggiornati:</h4>
+        <ul>
+            <li>L'indicatore WiFi rosso indica problemi con il servizio AMTAB</li>
+            <li>Attendi che il servizio AMTAB torni operativo</li>
+            <li>I dati vengono aggiornati automaticamente ogni 30 secondi</li>
+        </ul>
+
+        <h2>ℹ️ Informazioni Tecniche</h2>
+        <p><strong>Versione:</strong> 1.0 </p>
+        <p><strong>Compatibilità:</strong> iOS 15.0+</p>
+        <p><strong>Fonte Dati:</strong> API AMTAB + GTFS Statico</p>
+        <p><strong>Aggiornamento:</strong> Automatico ogni 30 secondi</p>
+        <p><strong>Uso GPS:</strong> Solo all'avvio e refresh manuale (per ottimizzare la batteria)</p>
+
+        <div class="contact">
+            <h3>📧 Supporto</h3>
+            <p>Per assistenza tecnica o segnalazioni:</p>
+            <p><strong>Sviluppatore:</strong> Antonio Franco</p>
+            <p><strong>Email:</strong> franco.antonio63@gmail.com</p>
+            <p><strong>Nota:</strong> Per problemi relativi agli orari o al servizio autobus, contattare direttamente AMTAB.</p>
+        </div>
+
+        <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;">
+        <p style="text-align: center; color: #666; font-size: 14px;">
+            © 2024 BariBusRT - Applicazione non ufficiale per il trasporto pubblico di Bari<br>
+            I dati sono forniti da AMTAB e potrebbero non essere sempre disponibili o accurati.
+        </p>
+    </div>
+</body>
+</html>
