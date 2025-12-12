@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walkpedia - The Encyclopedia That Walks With You</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        .app-store-badge {
+            display: inline-block;
+            margin: 20px 10px;
+        }
+        .features {
+            background: white;
+            padding: 80px 20px;
+            margin: 40px 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        .feature {
+            text-align: center;
+            padding: 30px;
+        }
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .feature h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        .how-it-works {
+            background: #f8f9fa;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .step {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .step-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+        .cta {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5em; }
+            .hero p { font-size: 1.1em; }
+            .features, .how-it-works, .cta { padding: 40px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <h1>🚶♂️ Walkpedia</h1>
+            <p>The encyclopedia that walks with you</p>
+            <p>Discover the fascinating stories behind street names as you explore your city. Turn every walk into a journey through history!</p>
+            
+            <!-- App Store badges would go here -->
+            <div class="app-store-badge">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" style="height: 60px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5em; color: #2c3e50; margin-bottom: 20px;">Why Choose Walkpedia?</h2>
+            <p style="text-align: center; font-size: 1.2em; color: #7f8c8d; max-width: 600px; margin: 0 auto;">Transform your daily walks into educational adventures with AI-powered historical insights</p>
+            
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">📍</div>
+                    <h3>Automatic Detection</h3>
+                    <p>Uses GPS to automatically detect when you change streets. No manual input required - just walk and learn!</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">📚</div>
+                    <h3>Reliable Sources</h3>
+                    <p>Powered by Wikipedia and Google AI for accurate, verified historical information about street namesakes.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🎧</div>
+                    <h3>Hands-Free Learning</h3>
+                    <p>High-quality text-to-speech in multiple languages. Listen while you walk without looking at your phone.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Fully Customizable</h3>
+                    <p>Adjust information length, search frequency, and language preferences to match your walking style.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Works Everywhere</h3>
+                    <p>Functions in any city worldwide with background GPS tracking, even when your screen is locked.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Privacy First</h3>
+                    <p>Your location data stays on your device. We never store or share your personal information.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="how-it-works">
+        <div class="container">
+            <h2 style="font-size: 2.5em; color: #2c3e50; margin-bottom: 20px;">How It Works</h2>
+            <p style="font-size: 1.2em; color: #7f8c8d; max-width: 600px; margin: 0 auto;">Getting started with Walkpedia is simple and intuitive</p>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Download & Launch</h3>
+                    <p>Install Walkpedia and grant location permissions for the best experience.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Start Walking</h3>
+                    <p>Press the start button and begin your walk. Walkpedia runs in the background.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Discover History</h3>
+                    <p>When you change streets, automatically receive fascinating historical information.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Listen & Learn</h3>
+                    <p>Enjoy hands-free learning with high-quality text-to-speech narration.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <div class="container">
+            <h2 style="font-size: 2.5em; margin-bottom: 20px;">Ready to Explore?</h2>
+            <p style="font-size: 1.3em; margin-bottom: 40px;">Join thousands of curious walkers discovering the hidden stories of their cities</p>
+            
+            <!-- App Store badge -->
+            <div class="app-store-badge">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" style="height: 60px;">
+            </div>
+            
+            <p style="margin-top: 30px; opacity: 0.9;">Available for iPhone and iPad • iOS 14.0 or later</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p>&copy; 2024 Walkpedia. All rights reserved.</p>
+            <div style="margin-top: 20px;">
+                <a href="privacy-policy-walkpedia.html">Privacy Policy</a>
+                <a href="support-walkpedia.html">Support</a>
+                <a href="mailto:support@walkpedia.app">Contact</a>
+            </div>
+            <p style="margin-top: 20px; opacity: 0.7;">Walkpedia - The encyclopedia that walks with you</p>
+        </div>
+    </div>
+</body>
+</html>
